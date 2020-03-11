@@ -1,0 +1,10 @@
+# 服务器的配置
+server:
+  port: 8888
+
+  book:
+    name: 三国演义
+    autor: 罗贯中
+    price: 48.0
+    desc: ${book.name}的价格是${book.price}元
+
