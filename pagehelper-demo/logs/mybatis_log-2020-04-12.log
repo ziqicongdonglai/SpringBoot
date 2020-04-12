@@ -1,0 +1,117 @@
+2020-04-12 21:02:05.430[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.pagehelper.mapper.MessageMapperTest], using SpringBootContextLoader
+2020-04-12 21:02:05.440[main][main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.pagehelper.mapper.MessageMapperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-12 21:02:05.442[main][main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.pagehelper.mapper.MessageMapperTest]: MessageMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-12 21:02:05.633[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.pagehelper.PagehelperDemoApplication for test class com.example.pagehelper.mapper.MessageMapperTest
+2020-04-12 21:02:05.776[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-12 21:02:05.805[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2f40e5db, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@517566b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64b73e7a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@530712d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2df6226d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@12ed9db6, org.springframework.test.context.event.EventPublishingTestExecutionListener@4ff4357f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@49cb9cb5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@55322aab, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2b4c1d96, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@45fd9a4d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@50468873]
+2020-04-12 21:02:06.199[main][main] INFO  c.e.p.mapper.MessageMapperTest - Starting MessageMapperTest on LAPTOP-K0SG6Q7R with PID 27352 (started by 18262 in D:\MySelf\Study\MainMajor\SpringBoot\SpringBoot\pagehelper-demo)
+2020-04-12 21:02:06.200[main][main] DEBUG c.e.p.mapper.MessageMapperTest - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-12 21:02:06.201[main][main] INFO  c.e.p.mapper.MessageMapperTest - No active profile set, falling back to default profiles: default
+2020-04-12 21:02:06.727[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-12 21:02:07.516[main][main] INFO  c.e.p.mapper.MessageMapperTest - Started MessageMapperTest in 1.655 seconds (JVM running for 4.067)
+2020-04-12 21:02:07.921[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-12 21:02:08.952[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-12 21:02:08.976[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==>  Preparing: select * from message order by msg_id LIMIT ? 
+2020-04-12 21:02:09.014[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==> Parameters: 3(Integer)
+2020-04-12 21:02:09.046[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - <==      Total: 3
+2020-04-12 21:02:09.047[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=2, msgText=兔子, msgSummary=动物)
+2020-04-12 21:02:09.059[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=3, msgText=小狼, msgSummary=null)
+2020-04-12 21:02:09.060[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=5, msgText=computer, msgSummary=)
+2020-04-12 21:02:09.060[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==>  Preparing: select * from message order by msg_id LIMIT ?, ? 
+2020-04-12 21:02:09.061[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==> Parameters: 3(Integer), 3(Integer)
+2020-04-12 21:02:09.064[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - <==      Total: 3
+2020-04-12 21:02:09.065[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(2) Message Message(msgId=6, msgText=computer, msgSummary=)
+2020-04-12 21:02:09.066[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(2) Message Message(msgId=7, msgText=小狼, msgSummary=动物)
+2020-04-12 21:02:09.066[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(2) Message Message(msgId=8, msgText=荷花, msgSummary=夏天)
+2020-04-12 21:02:09.066[main][main] INFO  c.e.p.mapper.MessageMapperTest - ======================
+2020-04-12 21:02:09.067[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==>  Preparing: select * from message order by msg_id 
+2020-04-12 21:02:09.067[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==> Parameters: 
+2020-04-12 21:02:09.077[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - <==      Total: 11
+2020-04-12 21:02:09.080[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=2, msgText=兔子, msgSummary=动物)
+2020-04-12 21:02:09.080[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=3, msgText=小狼, msgSummary=null)
+2020-04-12 21:02:09.081[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=5, msgText=computer, msgSummary=)
+2020-04-12 21:02:09.081[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=6, msgText=computer, msgSummary=)
+2020-04-12 21:02:09.081[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=7, msgText=小狼, msgSummary=动物)
+2020-04-12 21:02:09.082[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=8, msgText=荷花, msgSummary=夏天)
+2020-04-12 21:02:09.083[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=9, msgText=兔子, msgSummary=动物)
+2020-04-12 21:02:09.083[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=10, msgText=小狼, msgSummary=动物)
+2020-04-12 21:02:09.084[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=11, msgText=学习, msgSummary=study)
+2020-04-12 21:02:09.085[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=12, msgText=岁岁, msgSummary=猫)
+2020-04-12 21:02:09.085[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=13, msgText=哈比, msgSummary=猫)
+2020-04-12 21:02:09.204[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - ==>  Preparing: SELECT count(0) FROM message 
+2020-04-12 21:02:09.204[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - ==> Parameters: 
+2020-04-12 21:02:09.209[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - <==      Total: 1
+2020-04-12 21:02:09.210[main][main] DEBUG c.e.p.m.M.findAllWithParam - ==>  Preparing: select * from message order by msg_id LIMIT ? 
+2020-04-12 21:02:09.210[main][main] DEBUG c.e.p.m.M.findAllWithParam - ==> Parameters: 3(Integer)
+2020-04-12 21:02:09.213[main][main] DEBUG c.e.p.m.M.findAllWithParam - <==      Total: 3
+2020-04-12 21:02:09.214[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=2, msgText=兔子, msgSummary=动物)
+2020-04-12 21:02:09.214[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=3, msgText=小狼, msgSummary=null)
+2020-04-12 21:02:09.214[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=5, msgText=computer, msgSummary=)
+2020-04-12 21:02:09.215[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - ==>  Preparing: SELECT count(0) FROM message 
+2020-04-12 21:02:09.216[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - ==> Parameters: 
+2020-04-12 21:02:09.217[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - <==      Total: 1
+2020-04-12 21:02:09.218[main][main] DEBUG c.e.p.m.M.findAllWithParam - ==>  Preparing: select * from message order by msg_id LIMIT ?, ? 
+2020-04-12 21:02:09.219[main][main] DEBUG c.e.p.m.M.findAllWithParam - ==> Parameters: 3(Integer), 3(Integer)
+2020-04-12 21:02:09.221[main][main] DEBUG c.e.p.m.M.findAllWithParam - <==      Total: 3
+2020-04-12 21:02:09.223[main][main] INFO  c.e.p.mapper.MessageMapperTest - PageInfo: PageInfo{pageNum=2, pageSize=3, size=3, startRow=4, endRow=6, total=11, pages=4, list=Page{count=true, pageNum=2, pageSize=3, startRow=3, endRow=6, total=11, pages=4, reasonable=true, pageSizeZero=true}[Message(msgId=6, msgText=computer, msgSummary=), Message(msgId=7, msgText=小狼, msgSummary=动物), Message(msgId=8, msgText=荷花, msgSummary=夏天)], prePage=1, nextPage=3, isFirstPage=false, isLastPage=false, hasPreviousPage=true, hasNextPage=true, navigatePages=8, navigateFirstPage=1, navigateLastPage=4, navigatepageNums=[1, 2, 3, 4]}
+2020-04-12 21:02:09.238[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-12 21:02:09.251[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-04-12 21:03:27.996[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.pagehelper.mapper.MessageMapperTest], using SpringBootContextLoader
+2020-04-12 21:03:28.003[main][main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.pagehelper.mapper.MessageMapperTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-12 21:03:28.004[main][main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.pagehelper.mapper.MessageMapperTest]: MessageMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-12 21:03:28.152[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.pagehelper.PagehelperDemoApplication for test class com.example.pagehelper.mapper.MessageMapperTest
+2020-04-12 21:03:28.275[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-12 21:03:28.304[main][main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15dcfae7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3da05287, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1e636ea3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@115667d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@736caf7a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4ce7fffa, org.springframework.test.context.event.EventPublishingTestExecutionListener@497486b3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@63f8276e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@75f95314, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6127a7e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6bbe2511, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@495fac5f]
+2020-04-12 21:03:28.747[main][main] INFO  c.e.p.mapper.MessageMapperTest - Starting MessageMapperTest on LAPTOP-K0SG6Q7R with PID 28572 (started by 18262 in D:\MySelf\Study\MainMajor\SpringBoot\SpringBoot\pagehelper-demo)
+2020-04-12 21:03:28.748[main][main] DEBUG c.e.p.mapper.MessageMapperTest - Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-12 21:03:28.748[main][main] INFO  c.e.p.mapper.MessageMapperTest - No active profile set, falling back to default profiles: default
+2020-04-12 21:03:29.298[main][main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-04-12 21:03:30.049[main][main] INFO  c.e.p.mapper.MessageMapperTest - Started MessageMapperTest in 1.678 seconds (JVM running for 3.169)
+2020-04-12 21:03:30.467[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-04-12 21:03:31.311[main][main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-04-12 21:03:31.341[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==>  Preparing: select * from message order by msg_id LIMIT ? 
+2020-04-12 21:03:31.380[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==> Parameters: 3(Integer)
+2020-04-12 21:03:31.414[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - <==      Total: 3
+2020-04-12 21:03:31.418[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=2, msgText=兔子, msgSummary=动物)
+2020-04-12 21:03:31.434[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=3, msgText=小狼, msgSummary=null)
+2020-04-12 21:03:31.434[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=5, msgText=computer, msgSummary=)
+2020-04-12 21:03:31.435[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==>  Preparing: select * from message order by msg_id LIMIT ?, ? 
+2020-04-12 21:03:31.436[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==> Parameters: 3(Integer), 3(Integer)
+2020-04-12 21:03:31.439[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - <==      Total: 3
+2020-04-12 21:03:31.441[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(2) Message Message(msgId=6, msgText=computer, msgSummary=)
+2020-04-12 21:03:31.441[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(2) Message Message(msgId=7, msgText=小狼, msgSummary=动物)
+2020-04-12 21:03:31.441[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(2) Message Message(msgId=8, msgText=荷花, msgSummary=夏天)
+2020-04-12 21:03:31.441[main][main] INFO  c.e.p.mapper.MessageMapperTest - ======================
+2020-04-12 21:03:31.442[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==>  Preparing: select * from message order by msg_id 
+2020-04-12 21:03:31.442[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - ==> Parameters: 
+2020-04-12 21:03:31.455[main][main] DEBUG c.e.p.m.M.findAllWithRowBounds - <==      Total: 11
+2020-04-12 21:03:31.456[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=2, msgText=兔子, msgSummary=动物)
+2020-04-12 21:03:31.456[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=3, msgText=小狼, msgSummary=null)
+2020-04-12 21:03:31.457[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=5, msgText=computer, msgSummary=)
+2020-04-12 21:03:31.457[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=6, msgText=computer, msgSummary=)
+2020-04-12 21:03:31.457[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=7, msgText=小狼, msgSummary=动物)
+2020-04-12 21:03:31.457[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=8, msgText=荷花, msgSummary=夏天)
+2020-04-12 21:03:31.457[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=9, msgText=兔子, msgSummary=动物)
+2020-04-12 21:03:31.457[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=10, msgText=小狼, msgSummary=动物)
+2020-04-12 21:03:31.457[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=11, msgText=学习, msgSummary=study)
+2020-04-12 21:03:31.459[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=12, msgText=岁岁, msgSummary=猫)
+2020-04-12 21:03:31.459[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=13, msgText=哈比, msgSummary=猫)
+2020-04-12 21:03:31.459[main][main] INFO  c.e.p.mapper.MessageMapperTest - ======================
+2020-04-12 21:03:31.555[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - ==>  Preparing: SELECT count(0) FROM message 
+2020-04-12 21:03:31.556[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - ==> Parameters: 
+2020-04-12 21:03:31.558[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - <==      Total: 1
+2020-04-12 21:03:31.559[main][main] DEBUG c.e.p.m.M.findAllWithParam - ==>  Preparing: select * from message order by msg_id LIMIT ? 
+2020-04-12 21:03:31.559[main][main] DEBUG c.e.p.m.M.findAllWithParam - ==> Parameters: 3(Integer)
+2020-04-12 21:03:31.563[main][main] DEBUG c.e.p.m.M.findAllWithParam - <==      Total: 3
+2020-04-12 21:03:31.565[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=2, msgText=兔子, msgSummary=动物)
+2020-04-12 21:03:31.565[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=3, msgText=小狼, msgSummary=null)
+2020-04-12 21:03:31.565[main][main] INFO  c.e.p.mapper.MessageMapperTest - Page(1) Message Message(msgId=5, msgText=computer, msgSummary=)
+2020-04-12 21:03:31.566[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - ==>  Preparing: SELECT count(0) FROM message 
+2020-04-12 21:03:31.567[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - ==> Parameters: 
+2020-04-12 21:03:31.569[main][main] DEBUG c.e.p.m.M.findAllWithParam_COUNT - <==      Total: 1
+2020-04-12 21:03:31.570[main][main] DEBUG c.e.p.m.M.findAllWithParam - ==>  Preparing: select * from message order by msg_id LIMIT ?, ? 
+2020-04-12 21:03:31.571[main][main] DEBUG c.e.p.m.M.findAllWithParam - ==> Parameters: 3(Integer), 3(Integer)
+2020-04-12 21:03:31.573[main][main] DEBUG c.e.p.m.M.findAllWithParam - <==      Total: 3
+2020-04-12 21:03:31.576[main][main] INFO  c.e.p.mapper.MessageMapperTest - PageInfo: PageInfo{pageNum=2, pageSize=3, size=3, startRow=4, endRow=6, total=11, pages=4, list=Page{count=true, pageNum=2, pageSize=3, startRow=3, endRow=6, total=11, pages=4, reasonable=true, pageSizeZero=true}[Message(msgId=6, msgText=computer, msgSummary=), Message(msgId=7, msgText=小狼, msgSummary=动物), Message(msgId=8, msgText=荷花, msgSummary=夏天)], prePage=1, nextPage=3, isFirstPage=false, isLastPage=false, hasPreviousPage=true, hasNextPage=true, navigatePages=8, navigateFirstPage=1, navigateLastPage=4, navigatepageNums=[1, 2, 3, 4]}
+2020-04-12 21:03:31.593[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-04-12 21:03:31.620[SpringContextShutdownHook][SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
